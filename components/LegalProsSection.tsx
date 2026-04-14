@@ -105,8 +105,15 @@ export default function LegalProsSection() {
     );
 }
 
+interface Lawyer {
+    name: string;
+    location: string;
+    experience: string;
+    img: string;
+}
+
 /* ✅ Reusable Card */
-function Card({ lawyer }) {
+function Card({ lawyer }: { lawyer: Lawyer }) {
     return (
         <div className="relative rounded-2xl overflow-hidden shadow-md group">
 
